@@ -1,0 +1,145 @@
+﻿
+
+using UnityEngine;
+using System.Collections;
+using admob;
+
+public class admobdemo : MonoBehaviour
+{
+	Admob ad;
+	void Start (){
+		initAdmob ();
+	}
+
+	void initAdmob ()
+	{
+		ad = Admob.Instance ();
+		ad.bannerEventHandler += onBannerEvent;
+		ad.interstitialEventHandler += onInterstitialEvent;
+		ad.rewardedVideoEventHandler += onRewardedVideoEvent;
+		ad.nativeBannerEventHandler += onNativeBannerEvent;
+		#if UNITY_IPHONE
+			Admob.Instance ().initAdmob ("ca-app-pub-3395412980708319/6550380588","ca-app-pub-3395412980708319/8027113786");
+			Admob.Instance ().loadRewardedVideo("ca-app-pub-3395412980708319/9503846983");
+		#else
+			Admob.Instance ().initAdmob ("ca-app-pub-7665074309496944/2302270116", "ca-app-pub-7665074309496944/3779003313");
+			Admob.Instance ().loadRewardedVideo ("ca-app-pub-7665074309496944/5255736515");
+		#endif
+
+		if(!GameShop.IS.isRemoveAds)
+			ad.loadInterstitial();
+		ad.setGender (AdmobGender.MALE);
+		string[] keywords = { "game", "crash", "male game","Car" };
+		ad.setKeywords (keywords);
+	}
+
+	void onInterstitialEvent (string eventName, string msg)
+	{
+		if (eventName == AdmobEvent.onAdOpened) {
+			#if UNITY_IPHONE
+
+			if (GameUi.GameScr == GameUi.Scr.GamePlayScr || GameUi.GameScr == GameUi.Scr.GameOverScr || GameUi.GameScr == GameUi.Scr.GamePauseScr) {
+			if (GamePlayUI.MusicBG != null && GameShop.IS.isMusic && GameUi.GameScr == GameUi.Scr.GamePlayScr) {
+			GamePlayUI.MusicBG.Pause ();
+			}
+			if (GamePlayUI.MusicGameOver != null && GameShop.IS.isMusic && GameUi.GameScr == GameUi.Scr.GameOverScr) {
+			GamePlayUI.MusicGameOver.Pause ();
+			}
+			} else {
+			if (GameUi.MusicBG != null && GameShop.IS.isMusic) {
+			GameUi.MusicBG.Pause ();
+			}
+			}
+			#endif
+
+		}
+		if (eventName == AdmobEvent.onAdClosed) {
+			#if UNITY_IPHONE
+
+			if (GameUi.GameScr == GameUi.Scr.GamePlayScr || GameUi.GameScr == GameUi.Scr.GameOverScr || GameUi.GameScr == GameUi.Scr.GamePauseScr) {
+			if (GamePlayUI.MusicBG != null && GameShop.IS.isMusic && GameUi.GameScr == GameUi.Scr.GamePlayScr) {
+			GamePlayUI.MusicBG.Play ();
+			}
+			if (GamePlayUI.MusicGameOver != null && GameShop.IS.isMusic && GameUi.GameScr == GameUi.Scr.GameOverScr) {
+			GamePlayUI.MusicGameOver.Play ();
+			}
+			} else {
+			if (GameUi.MusicBG != null && GameShop.IS.isMusic) {
+			GameUi.MusicBG.Play ();
+			}
+			}
+
+
+		
+			#endif
+		}
+	}
+
+	void onBannerEvent (string eventName, string msg)
+	{
+		Debug.Log ("handler onAdmobBannerEvent---" + eventName + "   " + msg);
+	}
+
+	void onRewardedVideoEvent (string eventName, string msg)
+	{
+		if (eventName == AdmobEvent.onAdOpened) {
+			#if UNITY_IPHONE
+			if (GameUi.GameScr == GameUi.Scr.GamePlayScr || GameUi.GameScr == GameUi.Scr.GameOverScr || GameUi.GameScr == GameUi.Scr.GamePauseScr) {
+			if (GamePlayUI.MusicBG != null && GameShop.IS.isMusic && GameUi.GameScr == GameUi.Scr.GamePlayScr) {
+			GamePlayUI.MusicBG.Pause ();
+			}
+			if (GamePlayUI.MusicGameOver != null && GameShop.IS.isMusic && GameUi.GameScr == GameUi.Scr.GameOverScr) {
+			GamePlayUI.MusicGameOver.Pause ();
+			}
+			} else {
+			if (GameUi.MusicBG != null && GameShop.IS.isMusic) {
+			GameUi.MusicBG.Pause ();
+			}
+			}
+			#endif
+
+		}
+		if (eventName == AdmobEvent.onAdClosed) {
+			#if UNITY_IPHONE
+			if (GameUi.GameScr == GameUi.Scr.GamePlayScr || GameUi.GameScr == GameUi.Scr.GameOverScr || GameUi.GameScr == GameUi.Scr.GamePauseScr) {
+			if (GamePlayUI.MusicBG != null && GameShop.IS.isMusic && GameUi.GameScr == GameUi.Scr.GamePlayScr) {
+			GamePlayUI.MusicBG.Play ();
+			}
+			if (GamePlayUI.MusicGameOver != null && GameShop.IS.isMusic && GameUi.GameScr == GameUi.Scr.GameOverScr) {
+			GamePlayUI.MusicGameOver.Play ();
+			}
+			} else {
+			if (GameUi.MusicBG != null && GameShop.IS.isMusic) {
+			GameUi.MusicBG.Play ();
+			}
+			}
+
+			#endif
+
+		}
+		if (eventName == AdmobEvent.onRewarded) {
+			#if UNITY_IPHONE
+			if (GameUi.GameScr == GameUi.Scr.GamePlayScr || GameUi.GameScr == GameUi.Scr.GameOverScr || GameUi.GameScr == GameUi.Scr.GamePauseScr) {
+			if (GamePlayUI.MusicBG != null && GameShop.IS.isMusic && GameUi.GameScr == GameUi.Scr.GamePlayScr) {
+			GamePlayUI.MusicBG.Play ();
+			}
+			if (GamePlayUI.MusicGameOver != null && GameShop.IS.isMusic && GameUi.GameScr == GameUi.Scr.GameOverScr) {
+			GamePlayUI.MusicGameOver.Play ();
+			}
+			} else {
+			if (GameUi.MusicBG != null && GameShop.IS.isMusic) {
+			GameUi.MusicBG.Play ();
+			}
+			}
+
+			#endif
+			GameShop.IS.mTotalCash += 500;
+			GameShop.IS.Save ();
+		}
+	}
+
+	void onNativeBannerEvent (string eventName, string msg)
+	{
+		Debug.Log ("handler onAdmobNativeBannerEvent---" + eventName + "   " + msg);
+	}
+}

@@ -1,0 +1,137 @@
+fileFormatVersion: 2
+guid: e1769a20ceae443a98c928dadd0b8486
+timeCreated: 1496499962
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: b002
+    100002: boundry002
+    100004: boundry003
+    100006: Box055
+    100008: //RootNode
+    100010: end2
+    100012: end2 1
+    100014: relling006
+    100016: road014
+    100018: rock008
+    100020: tree1
+    100022: tree2
+    100024: wood_block
+    400000: b002
+    400002: boundry002
+    400004: boundry003
+    400006: Box055
+    400008: //RootNode
+    400010: end2
+    400012: end2 1
+    400014: relling006
+    400016: road014
+    400018: rock008
+    400020: tree1
+    400022: tree2
+    400024: wood_block
+    2300000: b002
+    2300002: boundry002
+    2300004: boundry003
+    2300006: Box055
+    2300008: end2
+    2300010: end2 1
+    2300012: relling006
+    2300014: road014
+    2300016: rock008
+    2300018: tree1
+    2300020: tree2
+    2300022: wood_block
+    3300000: b002
+    3300002: boundry002
+    3300004: boundry003
+    3300006: Box055
+    3300008: end2
+    3300010: end2 1
+    3300012: relling006
+    3300014: road014
+    3300016: rock008
+    3300018: tree1
+    3300020: tree2
+    3300022: wood_block
+    4300000: rock008
+    4300002: boundry003
+    4300004: end2
+    4300006: boundry002
+    4300008: end2
+    4300010: road014
+    4300012: relling006
+    4300014: tree2
+    4300016: Box055
+    4300018: tree1
+    4300020: wood_block
+    4300022: b002
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

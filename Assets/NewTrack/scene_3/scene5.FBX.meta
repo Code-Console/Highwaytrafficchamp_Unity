@@ -1,0 +1,204 @@
+fileFormatVersion: 2
+guid: e1bd29349e6574eac9775ef339111859
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Box045
+    100002: Box046
+    100004: Box047
+    100006: Box048
+    100008: road013
+    100010: //RootNode
+    100012: scene5
+    100014: scene5 1
+    100016: scene5_end001
+    400000: Box045
+    400002: Box046
+    400004: Box047
+    400006: Box048
+    400008: road013
+    400010: scene5
+    400012: //RootNode
+    400014: scene5 1
+    400016: scene5_end001
+    2300000: Box045
+    2300002: Box046
+    2300004: Box047
+    2300006: Box048
+    2300008: road013
+    2300010: scene5 1
+    2300012: scene5
+    3300000: Box045
+    3300002: Box046
+    3300004: Box047
+    3300006: Box048
+    3300008: road013
+    3300010: scene5 1
+    3300012: scene5
+    4300000: road013
+    4300002: scene5
+    4300004: Box045
+    4300006: Box046
+    4300008: Box047
+    4300010: Box048
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: b2
+    second: {fileID: 2100000, guid: 56be3edd04d574a88a522e3773ce8665, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: b5
+    second: {fileID: 2100000, guid: cc3c0ee75a3864d66885986863e4d441, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: land14
+    second: {fileID: 2100000, guid: 12eedae71604d49d293e8e801422765e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: land18
+    second: {fileID: 2100000, guid: f30f19f1581c24c79bc40ae72e830f93, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: land19
+    second: {fileID: 2100000, guid: 87f0a27dca59a43d192fcc4ef4f0a5e5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: land2
+    second: {fileID: 2100000, guid: ecde3516fa74146f397f0ee05b080685, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: land20
+    second: {fileID: 2100000, guid: 50904a39eedb0475fb7fbe826c029241, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: land23
+    second: {fileID: 2100000, guid: f4b6eeb3df2fa43c8806854628733bc4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: land3
+    second: {fileID: 2100000, guid: ec4e36e0ae8a943648bb5629264363ae, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: land4
+    second: {fileID: 2100000, guid: 182c75fc28c2e4010a16656450ba5bf8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: land8
+    second: {fileID: 2100000, guid: 12cb91f2ab06548e1ac359cedb3b7d1f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: relling
+    second: {fileID: 2100000, guid: 1f3b0066cc6a741059f7a90433d7c82b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: road
+    second: {fileID: 2100000, guid: 5e1a437693d64496c8bd2fa28f8b9e08, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tree1
+    second: {fileID: 2100000, guid: ae3705728cd784d3c991e3d74e03e56f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tree2
+    second: {fileID: 2100000, guid: b6e87080da7a948dca81788dad7dbebc, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
